@@ -1,0 +1,27 @@
+body{
+    background-color: salmon;
+}
+
+.sidebar-nav {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.sidebar-nav li{
+    margin-top: 5px;
+    color: violet;
+}
+
+ .enlinea li{
+    /* display: inline; */
+    margin: 0 30px; 
+} 
+
+.enlinea :hover{
+    background: skyblue;
+}
