@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% for film in film%}
+<fieldset>
+   <div>
+      <h1 class="sidebar-nav">{{film.title}}</h1>
+      <h3 class="sidebar-nav">{{film.director}}</h3>
+      <p>{{film.summary}}</p>
+
+
+   </div>
+</fieldset>
+{% endfor %}
+{% endblock %}

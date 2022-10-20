@@ -14,6 +14,7 @@ class Film(models.Model):
     director = models.ForeignKey('Director', on_delete=models.SET_NULL, null=True)
     summary = models.TextField(max_length=800, help_text="Descripcion de la pelicula")
     genre = models.ManyToManyField(Genre)
+    
 
     def __str__(self):
         return self.title

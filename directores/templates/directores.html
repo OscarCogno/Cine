@@ -1,0 +1,18 @@
+
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% for director in director %}
+<fieldset>
+<div>
+ <h1 class="sidebar-nav">{{director}}</h1>
+ <h3 class="sidebar-nav">Fecha de Nacimiento</h3>
+ <article class="sidebar-nav">{{director.date_of_birth}}</article>
+ <h3 class="sidebar-nav">Fecha de Fallecimiento</h3>
+ <article class="sidebar-nav">{{director.date_of_death}}</article>
+ 
+</div>
+</fieldset>
+{% endfor %}
+{% endblock %}

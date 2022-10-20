@@ -17,3 +17,17 @@ def index(request):
         }
     )
 
+def peliculas(request):
+    film = Film.objects.all()
+    return render(request,'peliculas.html', {
+        'film' : film
+    })
+
+def directores(request):
+    director = Director.objects.all()
+    return render(request, 'directores.html', {
+        'director' : director
+    })   
+
+
+
